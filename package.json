@@ -1,5 +1,8 @@
 {
   "author": "Dennis Torres <djtorres0@gmail.com>",
+  "bin": {
+    "blrrt-get-sounds" : "index.js"
+  },
   "dependencies": {
     "async": "^1.4.2",
     "cheerio": "^0.19.0",
