@@ -29,7 +29,7 @@ request
     if (!res.ok) console.error('Something went wrong');
 
     var $ = cheerio.load(res.text);
-    var outputDir = path.join(__dirname, 'sounds', name);
+    var outputDir = path.join(process.cwd(), name);
 
     var sounds = $('.snd').map(function () {
       return {
