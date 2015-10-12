@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 'use strict';
 
 var _ = require('lodash');
@@ -11,7 +13,7 @@ var yargs = require('yargs');
 
 var args = yargs
   .demand('name')
-  .describe('name', 'Specify the name of a person or thing to rip')
+  .describe('name', 'Specify the name of a person or thing to get')
   .example('node soundboard --name="Arnold Schwarzenegger"');
 
 var name = _.kebabCase(args.argv.name).trim();
